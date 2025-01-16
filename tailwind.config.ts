@@ -77,6 +77,10 @@ const config: Config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-fast": "pulse 3500ms linear infinite",
+        "pulse-faster": "pulse 3000ms linear infinite",
+        "pulse-slow": "pulse 6000ms linear infinite",
+        "pulse-slower": "pulse 6500ms linear infinite",
       },
       maxWidth: {
         "8xl": "90rem", // New custom max-width (1440px)

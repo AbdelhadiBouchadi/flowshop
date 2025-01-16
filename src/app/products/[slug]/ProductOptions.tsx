@@ -41,12 +41,6 @@ function ProductOptions({
                     })
                   }
                   className="peer hidden"
-                  disabled={
-                    !checkInStock(product, {
-                      ...selectedOptions,
-                      [option.name || ""]: choice.description || "",
-                    })
-                  }
                 />
                 <Label
                   htmlFor={choice.description}
@@ -55,7 +49,7 @@ function ProductOptions({
                     !checkInStock(product, {
                       ...selectedOptions,
                       [option.name || ""]: choice.description || "",
-                    }) && "cursor-not-allowed opacity-50",
+                    }) && "opacity-50",
                   )}
                 >
                   {option.optionType === products.OptionType.color && (

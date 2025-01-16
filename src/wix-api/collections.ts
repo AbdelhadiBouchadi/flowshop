@@ -16,7 +16,7 @@ export const getCollections = cache(
     const collections = await wixClient.collections
       .queryCollections()
       .ne("_id", "00000000-000000-000000-000000000001") // all products
-      .ne("_id", "32510e2b-cc3b-8d4e-ebe5-2797c8b9ad49") // featured products
+      .ne("_id", "09b810c0-8ba1-7af4-667d-5bdd4f6ed723") // featured products
       .find();
 
     return collections.items;
